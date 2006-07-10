@@ -36,7 +36,7 @@ In PEAR status of this package is: %{_status}.
 Interfejs do XML-API Hatena.
 
 Umo¿liwia operacje na us³ugach Hatena's Bookmark lub Hatena's
-Fotolife, oraz pobranie informacji ze stron Hatena.
+Fotolife, oraz pobieranie informacji ze stron Hatena.
 
 Ta klasa ma w PEAR status: %{_status}.
 
@@ -68,6 +68,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc install.log docs/%{_pearname}/{docs/IDEAS,docs/MAINTAINERS,docs/STATUS,docs/TESTERS,examples/Hatena_Services_Example_01.php}
 %{php_pear_dir}/.registry/*.reg
+%dir %{php_pear_dir}/Services/Hatena
 %{php_pear_dir}/Services/Hatena/Asin.php
 %{php_pear_dir}/Services/Hatena/Autolink.php
 %{php_pear_dir}/Services/Hatena/Bookmark.php
@@ -80,6 +81,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files tests
 %defattr(644,root,root,755)
+%dir %{php_pear_dir}/tests/Services_Hatena
+%dir %{php_pear_dir}/tests/Services_Hatena/tests
 %{php_pear_dir}/tests/Services_Hatena/tests/Asin.phpt
 %{php_pear_dir}/tests/Services_Hatena/tests/Autolink.phpt
 %{php_pear_dir}/tests/Services_Hatena/tests/Bookmarknum.phpt
