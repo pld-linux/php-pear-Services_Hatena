@@ -9,6 +9,7 @@ Summary(pl):	%{_pearname} - dostêp do us³ug sieciowych Hatena
 Name:		php-pear-%{_pearname}
 Version:	0.1.1
 Release:	1
+Epoch:		0
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
