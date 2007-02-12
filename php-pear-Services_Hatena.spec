@@ -5,7 +5,7 @@
 %define		_pearname	Services_Hatena
 
 Summary:	%{_pearname} - WebServices for Hatena
-Summary(pl.UTF-8):   %{_pearname} - dostęp do usług sieciowych Hatena
+Summary(pl.UTF-8):	%{_pearname} - dostęp do usług sieciowych Hatena
 Name:		php-pear-%{_pearname}
 Version:	0.1.1
 Release:	1
@@ -43,7 +43,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
