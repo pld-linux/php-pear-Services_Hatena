@@ -5,7 +5,7 @@
 %define		_pearname	Services_Hatena
 
 Summary:	%{_pearname} - WebServices for Hatena
-Summary(pl):	%{_pearname} - dostÍp do us≥ug sieciowych Hatena
+Summary(pl.UTF-8):   %{_pearname} - dostƒôp do us≈Çug sieciowych Hatena
 Name:		php-pear-%{_pearname}
 Version:	0.1.1
 Release:	1
@@ -33,17 +33,17 @@ and get information from Hatena Web Site.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
+%description -l pl.UTF-8
 Interfejs do XML-API Hatena.
 
-Umoøliwia operacje na us≥ugach Hatena's Bookmark lub Hatena's
+Umo≈ºliwia operacje na us≈Çugach Hatena's Bookmark lub Hatena's
 Fotolife, oraz pobieranie informacji ze stron Hatena.
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
@@ -51,7 +51,7 @@ AutoReq:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
