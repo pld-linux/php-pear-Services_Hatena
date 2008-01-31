@@ -8,7 +8,7 @@ Summary:	%{_pearname} - WebServices for Hatena
 Summary(pl.UTF-8):	%{_pearname} - dostęp do usług sieciowych Hatena
 Name:		php-pear-%{_pearname}
 Version:	0.1.1
-Release:	1
+Release:	2
 Epoch:		0
 License:	PHP
 Group:		Development/Languages/PHP
