@@ -7,13 +7,13 @@
 Summary:	%{_pearname} - WebServices for Hatena
 Summary(pl.UTF-8):	%{_pearname} - dostęp do usług sieciowych Hatena
 Name:		php-pear-%{_pearname}
-Version:	0.1.1
-Release:	2
+Version:	0.1.2
+Release:	1
 Epoch:		0
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	f0bbc5b9ef70dc5deab538f9b2f7c5e5
+# Source0-md5:	e33146e5f9aa644e185e17445f02389f
 URL:		http://pear.php.net/package/Services_Hatena/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -67,26 +67,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc install.log docs/%{_pearname}/{docs/IDEAS,docs/MAINTAINERS,docs/STATUS,docs/TESTERS,examples/Hatena_Services_Example_01.php}
+%doc install.log docs/%{_pearname}/{docs,examples}
 %{php_pear_dir}/.registry/*.reg
-%dir %{php_pear_dir}/Services/Hatena
-%{php_pear_dir}/Services/Hatena/Asin.php
-%{php_pear_dir}/Services/Hatena/Autolink.php
-%{php_pear_dir}/Services/Hatena/Bookmark.php
-%{php_pear_dir}/Services/Hatena/Bookmarknum.php
-%{php_pear_dir}/Services/Hatena/Exist.php
-%{php_pear_dir}/Services/Hatena/Foto.php
-%{php_pear_dir}/Services/Hatena/Search.php
-%{php_pear_dir}/Services/Hatena/Similar.php
+%{php_pear_dir}/Services/Hatena
 %{php_pear_dir}/Services/Hatena.php
 
 %files tests
 %defattr(644,root,root,755)
-%dir %{php_pear_dir}/tests/Services_Hatena
-%dir %{php_pear_dir}/tests/Services_Hatena/tests
-%{php_pear_dir}/tests/Services_Hatena/tests/Asin.phpt
-%{php_pear_dir}/tests/Services_Hatena/tests/Autolink.phpt
-%{php_pear_dir}/tests/Services_Hatena/tests/Bookmarknum.phpt
-%{php_pear_dir}/tests/Services_Hatena/tests/Exist.phpt
-%{php_pear_dir}/tests/Services_Hatena/tests/Search.phpt
-%{php_pear_dir}/tests/Services_Hatena/tests/Similar.phpt
+%{php_pear_dir}/tests/Services_Hatena
