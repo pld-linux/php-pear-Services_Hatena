@@ -7,13 +7,13 @@
 Summary:	%{_pearname} - WebServices for Hatena
 Summary(pl.UTF-8):	%{_pearname} - dostęp do usług sieciowych Hatena
 Name:		php-pear-%{_pearname}
-Version:	0.1.3
+Version:	0.1.4
 Release:	1
 Epoch:		0
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	08d9d0b29b4b1436d5bf1a94f681e7b1
+# Source0-md5:	8eb6b3a1e2b3e558da88b56373cd1fc6
 URL:		http://pear.php.net/package/Services_Hatena/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
