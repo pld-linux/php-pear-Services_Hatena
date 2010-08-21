@@ -1,25 +1,21 @@
 %include	/usr/lib/rpm/macros.php
-%define		_class		Services
-%define		_subclass	Hatena
 %define		_status		alpha
 %define		_pearname	Services_Hatena
-
 Summary:	%{_pearname} - WebServices for Hatena
 Summary(pl.UTF-8):	%{_pearname} - dostęp do usług sieciowych Hatena
 Name:		php-pear-%{_pearname}
 Version:	0.1.4
-Release:	1
-Epoch:		0
+Release:	2
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	8eb6b3a1e2b3e558da88b56373cd1fc6
 URL:		http://pear.php.net/package/Services_Hatena/
-BuildRequires:	php-pear-PEAR
+BuildRequires:	php-pear-PEAR >= 1:1.4.0-0.b1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
 Requires:	php-pear-HTTP_Request >= 1.3.0
-Requires:	php-pear-PEAR >= 1.3.0
+Requires:	php-pear-PEAR-core >= 1:1.3.0
 Requires:	php-pear-Services_OpenSearch >= 0.0.1
 Requires:	php-pear-XML_RPC >= 1.1.0
 BuildArch:	noarch
@@ -45,7 +41,7 @@ Ta klasa ma w PEAR status: %{_status}.
 Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development
-Requires:	%{name} = %{epoch}:%{version}-%{release}
+Requires:	%{name} = %{version}-%{release}
 AutoReq:	no
 
 %description tests
