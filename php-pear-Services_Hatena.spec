@@ -1,6 +1,5 @@
 %define		status		alpha
 %define		pearname	Services_Hatena
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - WebServices for Hatena
 Summary(pl.UTF-8):	%{pearname} - dostęp do usług sieciowych Hatena
 Name:		php-pear-%{pearname}
